@@ -1,7 +1,18 @@
-<h1>Lists</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.pinimg.com/originals/a0/57/fc/a057fca3294fbb9139ea3e401a2512fb.jpg);">
+  <div class="container">
+    <h1>Save any kind of movies!</h1>
+  </div>
+</div>
+
+<h1>My Lists</h1>
 
 <% @lists.each do |list| %>
-  <ul>
-    <li><%= list.name %></li>
-  </ul>
+  <div class="card-trip">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+    <div class="card-trip-infos">
+      <div>
+        <h2><%= list.name %></h2>
+      </div>
+    </div>
+  </div>
 <% end %>
