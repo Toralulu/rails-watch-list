@@ -1,0 +1,27 @@
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Edit list</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <%= simple_form_for(@list) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit %>
+        <% end %>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Update</button>
+      </div>
+
+    </div>
+  </div>
+</div>
